@@ -154,7 +154,7 @@ body {font-family: Arial;}
 		<!-- Start Banner Area -->
 		<section class="banner-area relative">
 			<div class="overlay overlay-bg"></div>
-			Click on the x button in the top right corner to close the current tab:</p>
+			<p>Click on the x button in the top right corner to close the current tab:</p>
 
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Template1')" id="defaultOpen">Template 1</button>
@@ -166,36 +166,69 @@ body {font-family: Arial;}
 <div id="Template1" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
 
-  		
+  		<p>
   		<!-- Breadcrumb Navbar -->
 					<ul class="breadcrumb">
-				  <li><a href="http://localhost:9090/ResumeComp/jsp/index.jsp">Home</a></li>
+				  <li><a href="http://resume-project-5317ed.webflow.io/">Home</a></li>
 				  <li>Template 1</li>
 				</ul>
 		</p>		
   
-    
+  <p><div class="container">
+        <div class="row form-group">
+            <div class="col-xs-12">
+                <ul class="nav nav-pills nav-justified thumbnail setup-panel" id="myNav">
+                    <li id="navStep1" class="li-nav active" step="#step-1">
+                        <a>
+                            <h4 class="list-group-item-heading">Step 1</h4>
+                            <p class="list-group-item-text">Personal Information</p>
+                        </a>
+                    </li>
+                    <li id="navStep2" class="li-nav disabled" step="#step-2">
+                        <a>
+                            <h4 class="list-group-item-heading">Step 2</h4>
+                            <p class="list-group-item-text">Education</p>
+                        </a>
+                    </li>
+                    <li id="navStep3" class="li-nav disabled" step="#step-3">
+                        <a>
+                            <h4 class="list-group-item-heading">Step 3</h4>
+                            <p class="list-group-item-text">Experience</p>
+                        </a>
+                    </li>
+                    <li id="navStep4" class="li-nav disabled" step="#step-4">
+                        <a>
+                            <h4 class="list-group-item-heading">Step 4</h4>
+                            <p class="list-group-item-text">Social Media</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+  
         <div class="row setup-content" id="step-1">
             <div class="col-xs-12">
                 <div class="col-md-12 well text-center">
                     <h1> STEP 1</h1>
                     <!-- <form> -->
-		
-  <form action="<%=request.getContextPath()%>/ResumeForm" method="post">
+		<p>
              
         			<fieldset>
 								<legend id="title5" class="desc"><strong><u>Personal Information</u></strong></legend><hr>
 						</fieldset>
-						
+						<p>
 						<div class="row">
+				<form action="<%=request.getContextPath()%>/ResumeForm" method="post">
 						<div class="col-sm-6 form-group">
 							
 								<label>First Name</label>
-								<input type="text" name="FirstName" placeholder="Enter First Name Here.." class="form-control" value="${FirstName}">
+								<input type="text" name="FirstName" placeholder="Enter First Name Here.." class="form-control">
 							</div>
 							<div class="col-sm-6 form-group">
 								<label>Last Name</label>
-								<input type="text" name="LastName" placeholder="Enter Last Name Here.." class="form-control" value="${LastName}">
+								<input type="text" name="LastName" placeholder="Enter Last Name Here.." class="form-control">
 							</div>
 						</div>					
 						<div class="form-group">
@@ -249,14 +282,19 @@ body {font-family: Arial;}
                     		</div>
 						</div>	
                         <br><button class="addfields btn btn-success" type="button" id="add-skills">Add Skills</button>
-					</p>					
+					</p>
+										<button class="btn btn-lg btn-info"  type="submit">Submit</button>
+					
+				</form>
+                    <input onclick="step1Next()" class="btn btn-md btn-info" value="Next">
 
                     <!-- </form> -->
                 </div>
             </div>
         </div>
-
-
+    
+        
+        
         <div class="row setup-content" id="step-2">
             <div class="col-xs-12">
                 <div class="col-md-12 well text-center">
@@ -265,10 +303,10 @@ body {font-family: Arial;}
                     <!--<form>-->
                       <!-- This is where you input your Education information -->	
 
-
           				<fieldset>
 								<legend id="title5" class="desc"><strong><u>Education Information</u></strong></legend><hr>
 						</fieldset>
+						<form action="<%=request.getContextPath()%>/ResumeForm" method="post">	
 							<div class="form-group">
 								<label>School Attended</label>
 								<input type="text" name="schoolAttended" placeholder="Enter School Attended" class="form-control">
@@ -312,10 +350,13 @@ body {font-family: Arial;}
 						</p>
 					</div>								
 						<input type="hidden" id="schoolUtilCount" name="schoolUtilCount"/>				
-					</div>
-                   <!--</form> -->
+					</div>	
+					</form>
+                    <!--</form> -->
 
-                    
+                    <input onclick="prevStep()" class="btn btn-md btn-info" value="Prev">
+                    <input onclick="step2Next()" class="btn btn-md btn-info" value="Next">
+
                 </div>
             </div>
         </div>
@@ -325,9 +366,10 @@ body {font-family: Arial;}
                 <div class="col-md-12 well text-center">
                     <h1 class="text-center"> STEP 3</h1>
 
-                   <fieldset>
+                    <fieldset>
 								<legend id="title5" class="desc"><strong><u>Experience</u></strong></legend><hr>
 						</fieldset>
+						<form action="<%=request.getContextPath()%>/ResumeForm" method="post">
 							<div class="form-group">
 								<label>Company</label>
 								<input type="text" name="company" placeholder="Enter Company" class="form-control">
@@ -356,7 +398,7 @@ body {font-family: Arial;}
 						<Br>
 						
 					<!-- Add additional information of school -->	
-					
+					<p>
 					<div class="row">
 					<fieldset>
 						<legend>Additional Experience</legend>
@@ -370,7 +412,11 @@ body {font-family: Arial;}
 						</div>					
 					</div>								
 						<input type="hidden" id="experienceUtilCount" name="experienceUtilCount"/>				
-					</div>	
+					</div>		
+					</form>
+
+                    <input onclick="prevStep()" class="btn btn-md btn-info" value="Prev">
+                    <input onclick="step3Next()" class="btn btn-md btn-info" value="Next">
 
                 </div>
             </div>
@@ -380,12 +426,13 @@ body {font-family: Arial;}
                 <div class="col-md-12 well text-center">
                     <h1 class="text-center"> STEP 4</h1>
 
-                   
-
+                   <p>
 					<fieldset>
 						<legend><strong><u>Social Media</u></strong></legend><hr>
-					</fieldset>							
-					<div class="row">
+					</fieldset>	
+							
+						<form action="<%=request.getContextPath()%>/ResumeForm" method="post">	
+						<div class="row">
 							<div class="col-sm-6 form-group">
 								<label>Facebook</label>
 								<input type="text" name="facebook" placeholder="Facebook" class="form-control">
@@ -404,37 +451,36 @@ body {font-family: Arial;}
 							</div>	
 						</div>		
 					</p>
- 											<button class="btn btn-lg btn-info"  type="submit">Submit</button>
-                    	       </div>
-			            </div>
-			        </div>
-</form>			        
-			       
-			    </p>
-			</div>
-
-</form>
-
+                    <input onclick="prevStep()" class="btn btn-md btn-info" value="Prev">
+                    											<button class="btn btn-lg btn-info"  type="submit">Submit</button>
+                    	
+                    
+                </div>
+               </form>
+            </div>
+        </div>
+    </p>
+</div>
 
 <div id="Template2" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Template 2</h3>
-  <input class="btn btn-md btn-primary" value="Click for Template 2" onclick="location.href='http://localhost:9090/ResumeComp/jsp/resume2/index.jsp'"></p> 
-  <a href="http://localhost:9090/ResumeComp/jsp/resume2/index.jsp"><img src="img/resume2.png"></a></p>
+  <p><input class="btn btn-md btn-primary" value="Click for Template 2" onclick="location.href='http://23.92.26.251/resume/template2/'"></p> 
+  <p><a href="http://23.92.26.251/resume/template2/"><img src="img/resume2.png"></a></p>
 </div>
 
 <div id="Template3" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Template 3</h3>
-    <input class="btn btn-md btn-primary" value="Click for Template 3" onclick="location.href='http://localhost:9090/ResumeComp/jsp/resume3/index.jsp'"></p>
-  <a href="http://localhost:9090/ResumeComp/jsp/resume3/index.jsp"><img src="img/resume3.jpg"></a></p>
+    <p><input class="btn btn-md btn-primary" value="Click for Template 3" onclick="location.href='http://23.92.26.251/resume/template3/'"></p>
+  <p><a href="http://23.92.26.251/resume/template3/"><img src="img/resume3.jpg"></a></p>
 </div>
 
 <div id="Template4" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Template 4</h3>
-    <input class="btn btn-md btn-primary" value="Click for Template 4" onclick="location.href='http://localhost:9090/ResumeComp/jsp/resume4/index.jsp'"></p>
-  <a href="http://localhost:9090/ResumeComp/jsp/resume4/index.jsp"><img src="img/resume4.jpg"></a></p>
+    <p><input class="btn btn-md btn-primary" value="Click for Template 4" onclick="location.href='http://23.92.26.251/resume/template4/'"></p>
+  <p><a href="http://23.92.26.251/resume/template4/"><img src="img/resume4.jpg"></a></p>
 </div>
 			</div>
 		</section>
@@ -461,7 +507,7 @@ addSkillsForm.on("click", function() {
        document.getElementById("skillsUtilCount").value = --indexSkills;
        $(this).closest('#skills-m').remove();
     });
-    document.getElementById("skillsUtilCount").value = indexSkills;
+    document.getElementById("skillsUtilCount").value = indexExperience;
     skills.append(form);
 });
 

@@ -157,20 +157,41 @@ body {font-family: Arial;}
 			Click on the x button in the top right corner to close the current tab:</p>
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Template1')" id="defaultOpen">Template 1</button>
+  <button class="tablinks" onclick="openCity(event, 'Template1')">Template 1</button>
   <button class="tablinks" onclick="openCity(event, 'Template2')">Template 2</button>
   <button class="tablinks" onclick="openCity(event, 'Template3')">Template 3</button>
-  <button class="tablinks" onclick="openCity(event, 'Template4')">Template 4</button>
+  <button class="tablinks" onclick="openCity(event, 'Template4')" id="defaultOpen">Template 4</button>
 </div>
 
 <div id="Template1" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Template 1</h3>
+    <input class="btn btn-md btn-primary" value="Click for Template 1" onclick="location.href='http://localhost:9090/ResumeComp/jsp/resume1/index.jsp'"></p>
+  <a href="http://localhost:9090/ResumeComp/jsp/resume1/index.jsp"><img src="img/resume1.jpg"></a></p>
+</div>
+
+<div id="Template2" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Template 2</h3>
+    <input class="btn btn-md btn-primary" value="Click for Template 2" onclick="location.href='http://localhost:9090/ResumeComp/jsp/resume2/index.jsp'"></p>
+  <a href="http://localhost:9090/ResumeComp/jsp/resume2/index.jsp"><img src="img/resume2.png"></a></p>
+</div>
+
+<div id="Template3" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Template 3</h3>
+    <input class="btn btn-md btn-primary" value="Click for Template 3" onclick="location.href='http://localhost:9090/ResumeComp/jsp/resume3/index.jsp'"></p>
+  <a href="http://localhost:9090/ResumeComp/jsp/resume3/index.jsp"><img src="img/resume3.jpg"></a></p>
+</div>
+
+<div id="Template4" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
 
   		
   		<!-- Breadcrumb Navbar -->
 					<ul class="breadcrumb">
-				  <li><a href="http://localhost:9090/ResumeComp/jsp/index.jsp">Home</a></li>
-				  <li>Template 1</li>
+				  <li><a href="http://resume-project-5317ed.webflow.io/">Home</a></li>
+				  <li>Template 4</li>
 				</ul>
 		</p>		
   
@@ -181,7 +202,7 @@ body {font-family: Arial;}
                     <h1> STEP 1</h1>
                     <!-- <form> -->
 		
-  <form action="<%=request.getContextPath()%>/ResumeForm" method="post">
+  <form action="<%=request.getContextPath()%>/ResumeForm4" method="post">
              
         			<fieldset>
 								<legend id="title5" class="desc"><strong><u>Personal Information</u></strong></legend><hr>
@@ -415,27 +436,6 @@ body {font-family: Arial;}
 
 </form>
 
-
-<div id="Template2" class="tabcontent">
-  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-  <h3>Template 2</h3>
-  <input class="btn btn-md btn-primary" value="Click for Template 2" onclick="location.href='http://localhost:9090/ResumeComp/jsp/resume2/index.jsp'"></p> 
-  <a href="http://localhost:9090/ResumeComp/jsp/resume2/index.jsp"><img src="img/resume2.png"></a></p>
-</div>
-
-<div id="Template3" class="tabcontent">
-  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-  <h3>Template 3</h3>
-    <input class="btn btn-md btn-primary" value="Click for Template 3" onclick="location.href='http://localhost:9090/ResumeComp/jsp/resume3/index.jsp'"></p>
-  <a href="http://localhost:9090/ResumeComp/jsp/resume3/index.jsp"><img src="img/resume3.jpg"></a></p>
-</div>
-
-<div id="Template4" class="tabcontent">
-  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-  <h3>Template 4</h3>
-    <input class="btn btn-md btn-primary" value="Click for Template 4" onclick="location.href='http://localhost:9090/ResumeComp/jsp/resume4/index.jsp'"></p>
-  <a href="http://localhost:9090/ResumeComp/jsp/resume4/index.jsp"><img src="img/resume4.jpg"></a></p>
-</div>
 			</div>
 		</section>
 		<!-- End Banner Area -->

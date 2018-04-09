@@ -8,13 +8,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.resume.beans.*;
+
 /**
  * Servlet implementation class Resume
  */
-public class Resume1 extends HttpServlet {
+public class ResumeForm2 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+
        
-   
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.setContentType("text/html");
@@ -34,18 +36,31 @@ public class Resume1 extends HttpServlet {
 		String objective = request.getParameter("objective");
 		String Website = request.getParameter("Website");
 		String skills = request.getParameter("skills");
-	
-		if(FirstName.isEmpty()||LastName.isEmpty())
-		{
-			RequestDispatcher rd = request.getRequestDispatcher("registration.jsp");
-			out.println("<font color=red>Please fill all the fields</font>");
-			rd.include(request, response);
-		}
-		else
-		{
-			RequestDispatcher rd = request.getRequestDispatcher("/jsp/resume1/result.jsp");
+		
+		
+		//Education Information
+		String schoolAttended = request.getParameter("schoolAttended");
+		String degreeReceived = request.getParameter("degreeReceived");
+		String achievements = request.getParameter("achievements");
+		String schoolCity = request.getParameter("schoolCity");
+		String schoolState = request.getParameter("schoolState");
+		
+		//Experience Information
+		String company = request.getParameter("company");
+		String title = request.getParameter("title");
+		String dateStarted = request.getParameter("dateStarted");
+		String dateEnded = request.getParameter("dateEnded");
+		String description = request.getParameter("description");
+		
+		//Social Media
+		String facebook = request.getParameter("facebook");
+		String linkedIn = request.getParameter("linkedIn");
+		String twitter = request.getParameter("twitter");
+		String github = request.getParameter("github");
+		
+		
+			RequestDispatcher rd = request.getRequestDispatcher("/jsp/resume2/result.jsp");
 			rd.forward(request, response);
-		}
 	}
 
 

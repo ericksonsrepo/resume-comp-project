@@ -4,46 +4,46 @@
 	<servlet>
 		<description>
 		</description>
-		<display-name>Resume1</display-name>
-		<servlet-name>Resume1</servlet-name>
-		<servlet-class>com.resume.servlet.Resume1</servlet-class>
+		<display-name>ResumeForm</display-name>
+		<servlet-name>ResumeForm</servlet-name>
+		<servlet-class>com.resume.servlet.ResumeForm</servlet-class>
 	</servlet>
 	<servlet>
 		<description>
 		</description>
-		<display-name>Resume2</display-name>
-		<servlet-name>Resume2</servlet-name>
-		<servlet-class>com.resume.servlet.Resume2</servlet-class>
+		<display-name>ResumeForm4</display-name>
+		<servlet-name>ResumeForm4</servlet-name>
+		<servlet-class>com.resume.servlet.ResumeForm4</servlet-class>
 	</servlet>
 	<servlet>
 		<description>
 		</description>
-		<display-name>Resume3</display-name>
-		<servlet-name>Resume3</servlet-name>
-		<servlet-class>com.resume.servlet.Resume3</servlet-class>
+		<display-name>ResumeForm2</display-name>
+		<servlet-name>ResumeForm2</servlet-name>
+		<servlet-class>com.resume.servlet.ResumeForm2</servlet-class>
 	</servlet>
 	<servlet>
 		<description>
 		</description>
-		<display-name>Resume4</display-name>
-		<servlet-name>Resume4</servlet-name>
-		<servlet-class>com.resume.servlet.Resume4</servlet-class>
+		<display-name>ResumeForm3</display-name>
+		<servlet-name>ResumeForm3</servlet-name>
+		<servlet-class>com.resume.servlet.ResumeForm3</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>Resume1</servlet-name>
-		<url-pattern>/Resume1</url-pattern>
+		<servlet-name>ResumeForm</servlet-name>
+		<url-pattern>/ResumeForm</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
-		<servlet-name>Resume2</servlet-name>
-		<url-pattern>/Resume2</url-pattern>
+		<servlet-name>ResumeForm4</servlet-name>
+		<url-pattern>/ResumeForm4</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
-		<servlet-name>Resume3</servlet-name>
-		<url-pattern>/Resume3</url-pattern>
+		<servlet-name>ResumeForm2</servlet-name>
+		<url-pattern>/ResumeForm2</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
-		<servlet-name>Resume4</servlet-name>
-		<url-pattern>/Resume4</url-pattern>
+		<servlet-name>ResumeForm3</servlet-name>
+		<url-pattern>/ResumeForm3</url-pattern>
 	</servlet-mapping>
 	<welcome-file-list>
 		<welcome-file>/jsp/index.jsp</welcome-file>

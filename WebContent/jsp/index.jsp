@@ -89,7 +89,7 @@
 		
 		<div class="col-lg-2 col-md-2 text-center">
             <div class="service-box mt-5 mx-auto">
-			<img src ="/img/profile.jpg" style="width:128px;height:128px; >
+			<img src ="../jsp/img/profile.jpg" style="width:128px;height:128px; >
 			<h3 class=" mb-3">Erick Angeles</h3>
               <p class="text-muted mb-0">Chronological Template  shows your job history in a timeline.</p>
 
@@ -97,14 +97,14 @@
           </div>
           <div class="col-lg-2 col-md-2 text-center">
             <div class="service-box mt-5 mx-auto">
-			<img src ="profile.jpg" style="width:128px;height:128px; >
+			<img src ="../jsp/img/profile.jpg" style="width:128px;height:128px; >
               <h3 class="mb-3">Alyssa Benipayo</h3>
               <p class="text-muted mb-0">Functional Template focuses on your skills and not on your work history.</p>
             </div>
           </div>
           <div class="col-lg-2 col-md-2 text-center">
             <div class="service-box mt-5 mx-auto">
-			<img src ="profile.jpg" style="width:128px;height:128px; >
+			<img src ="../jsp/img/profile.jpg" style="width:128px;height:128px; >
 			<h3 class="mb-3">Eric Kha</h3>
               <p class="text-muted mb-0">Combination of both Funtional & Chronological</p>
             </div>
@@ -112,14 +112,14 @@
 		  
           <div class="col-lg-2 col-md-2 text-center">
             <div class="service-box mt-5 mx-auto">
-			<img src ="profile.jpg" style="width:128px;height:128px; >
+			<img src ="../jsp/img/profile.jpg" style="width:128px;height:128px; >
               <h3 class="mb-3">Ryan Trenh</h3>
               <p class="text-muted mb-0">Targeted resume customizes the specific information for a specific position you want.</p>
             </div>
           </div>
 		  <div class="col-lg-2 col-md-2 text-center">
             <div class="service-box mt-5 mx-auto">
-			<img src ="profile.jpg" style="width:128px;height:128px; >
+			<img src ="../jsp/img/profile.jpg" style="width:128px;height:128px; >
               <h3 class="mb-3">Maria Vargas</h3>
               <p class="text-muted mb-0">Targeted resume customizes the specific information for a specific position you want.</p>
             
@@ -143,23 +143,24 @@
         <div class="row">
 		  <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-				<a target="_blank" href="../jsp/resume1/index.jsp" class="w-button">Sample Template 1</a>
-				<a href="../jsp/resume1/index.jsp" target="_blank" class="w-inline-block"></a>
+				<a target="_blank" href="../jsp/resume1/index.jsp" class="w-button"><img src ="../jsp/img/resume1.jpg" style="width:200px;height:130px; ></a>
+				<a href="../jsp/resume1/index.jsp" target="_blank" class="w-inline-block">Template 1</a>
 			<h3>Chronological Template</h3>
               <p class="text-muted mb-0">Chronological Template  shows your job history in a timeline.</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-             <a href="http://23.92.26.251/resume/template2/" target="_blank" class="w-button">Sample Template 2</a>
-			 <a href="http://23.92.26.251/resume/template1/" target="_blank" class="w-inline-block"></a>
+             <a href="../jsp/resume2/index.jsp" target="_blank" class="w-button"><img src ="../jsp/img/resume2.jpg" style="width:200px;height:130px; ></a>
+			 <a href="../jsp/resume2/index.jsp" target="_blank" class="w-inline-block">Template 2</a>
               <h3 class="mb-3">Functional Template</h3>
               <p class="text-muted mb-0">Functional Template focuses on your skills and not on your work history.</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-            <a href="http://23.92.26.251/resume/template3/" target="_blank" class="w-button">Sample Template 3</a>
+            <a href="../jsp/resume3/index.jsp" target="_blank" class="w-button"><img src ="../jsp/img/resume3.jpg" style="width:200px;height:130px; ></a>
+			<a href="../jsp/resume3/index.jsp" target="_blank" class="w-inline-block">Template 3</a>
 			<h3 class="mb-3">Functional & Chronological</h3>
               <p class="text-muted mb-0">Combination of both Funtional & Chronological</p>
             </div>
@@ -167,7 +168,8 @@
 		  
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <a href="http://23.92.26.251/resume/template4/" target="_blank" class="w-button">Sample Template 4</a>
+              <a href="../jsp/resume4/index.jsp" target="_blank" class="w-button"><img src ="../jsp/img/resume4.jpg" style="width:200px;height:130px; ></a>
+              <a href="../jsp/resume4/index.jsp" target="_blank" class="w-inline-block">Template 4</a>
               <h3 class="mb-3">Targeted Resume</h3>
               <p class="text-muted mb-0">Targeted resume customizes the specific information for a specific position you want.</p>
             </div>

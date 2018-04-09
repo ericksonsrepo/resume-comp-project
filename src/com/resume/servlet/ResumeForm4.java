@@ -14,7 +14,7 @@ import com.resume.beans.*;
 /**
  * Servlet implementation class Resume
  */
-public class ResumeForm extends HttpServlet {
+public class ResumeForm4 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
        
@@ -38,7 +38,7 @@ public class ResumeForm extends HttpServlet {
 		String Website = request.getParameter("Website");
 		String skills = request.getParameter("skills");
 		
-			
+		
 		//Education Information
 		String schoolAttended = request.getParameter("schoolAttended");
 		String degreeReceived = request.getParameter("degreeReceived");
@@ -59,14 +59,8 @@ public class ResumeForm extends HttpServlet {
 		String twitter = request.getParameter("twitter");
 		String github = request.getParameter("github");
 		
-////		SocialMedia socialmediaBean = new SocialMedia();
-////		
-////		socialmediaBean.setFacebook(facebook);
-////		socialmediaBean.setLinkedIn(linkedIn);
-////		socialmediaBean.setTwitter(twitter);
-////		socialmediaBean.setGithub(github);
-//		
-			RequestDispatcher rd = request.getRequestDispatcher("/jsp/resume1/result.jsp");
+		
+			RequestDispatcher rd = request.getRequestDispatcher("/jsp/resume4/result.jsp");
 			rd.forward(request, response);
 	}
 

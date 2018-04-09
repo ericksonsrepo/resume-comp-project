@@ -63,7 +63,7 @@
 	String github = request.getParameter("github");%>
 
     <p>
-      <a href="http://pdf-ace.com/pdfme" target="_blank"><button type="button" class="btn btn-primary">Download as PDF</button></a>
+      <a href="http://pdf-ace.com/pdfme?cache=1&cache_for=86400" target="_blank"><button type="button" class="btn btn-primary">Download as PDF</button></a>
 
     <button class="btn btn-primary hidden-print" onclick="myFunction()"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print</button>
     <div class="wrapper" id="content">
