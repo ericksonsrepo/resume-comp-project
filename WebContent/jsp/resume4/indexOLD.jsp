@@ -159,8 +159,8 @@ body {font-family: Arial;}
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Template1')">Template 1</button>
   <button class="tablinks" onclick="openCity(event, 'Template2')">Template 2</button>
-  <button class="tablinks" onclick="openCity(event, 'Template3')">Template 3</button>
-  <button class="tablinks" onclick="openCity(event, 'Template4')" id="defaultOpen">Template 4</button>
+  <button class="tablinks" onclick="openCity(event, 'Template3')" id="defaultOpen">Template 3</button>
+  <button class="tablinks" onclick="openCity(event, 'Template4')" >Template 4</button>
 </div>
 
 <div id="Template1" class="tabcontent">
@@ -177,14 +177,9 @@ body {font-family: Arial;}
   <a href="http://localhost:9090/ResumeComp/jsp/resume2/index.jsp"><img src="img/resume2.png"></a></p>
 </div>
 
-<div id="Template3" class="tabcontent">
-  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-  <h3>Template 3</h3>
-    <input class="btn btn-md btn-primary" value="Click for Template 3" onclick="location.href='http://localhost:9090/ResumeComp/jsp/resume3/index.jsp'"></p>
-  <a href="http://localhost:9090/ResumeComp/jsp/resume3/index.jsp"><img src="img/resume3.jpg"></a></p>
-</div>
 
-<div id="Template4" class="tabcontent">
+
+<div id="Template3" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
 
   		
@@ -436,9 +431,18 @@ body {font-family: Arial;}
 
 </form>
 
+		<div id="Template4" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Template 3</h3>
+    <input class="btn btn-md btn-primary" value="Click for Template 3" onclick="location.href='http://localhost:9090/ResumeComp/jsp/resume3/index.jsp'"></p>
+  <a href="http://localhost:9090/ResumeComp/jsp/resume3/index.jsp"><img src="img/resume3.jpg"></a></p>
+</div>
+		
 			</div>
 		</section>
-		<!-- End Banner Area -->
+		
+		
+<!-- End Banner Area -->
 		
 <script>
 var skills = $("#more-skills");

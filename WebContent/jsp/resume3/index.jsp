@@ -160,7 +160,7 @@ body {font-family: Arial;}
   <button class="tablinks" onclick="openCity(event, 'Template1')">Template 1</button>
   <button class="tablinks" onclick="openCity(event, 'Template2')">Template 2</button>
   <button class="tablinks" onclick="openCity(event, 'Template3')" id="defaultOpen">Template 3</button>
-  <button class="tablinks" onclick="openCity(event, 'Template4')">Template 4</button>
+  <button class="tablinks" onclick="openCity(event, 'Template4')" >Template 4</button>
 </div>
 
 <div id="Template1" class="tabcontent">
@@ -177,16 +177,17 @@ body {font-family: Arial;}
   <a href="http://localhost:9090/ResumeComp/jsp/resume2/index.jsp"><img src="img/resume2.png"></a></p>
 </div>
 
+
+
 <div id="Template3" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-
   		
   		<!-- Breadcrumb Navbar -->
 					<ul class="breadcrumb">
 				  <li><a href="http://localhost:9090/ResumeComp/jsp/index.jsp">Home</a></li>
 				  <li>Template 3</li>
 				</ul>
-		</p>		
+		<p>		
   
     
         <div class="row setup-content" id="step-1">
@@ -272,7 +273,7 @@ body {font-family: Arial;}
                     
                 </div>
             </div>
-        </div>
+
   
         <div class="row setup-content" id="step-3">
             <div class="col-xs-12">
@@ -283,7 +284,7 @@ body {font-family: Arial;}
 								<legend id="title5" class="desc"><strong><u>Associations</u></strong></legend><hr>
 						</fieldset>
 							
-							<div class="row">
+						<div class="row">
 							<div class="col-sm-6 form-group">
 								<label>Association Name</label>
 								<input type="text" name="associationName" placeholder="Enter City Name Here.." class="form-control">
@@ -298,6 +299,7 @@ body {font-family: Arial;}
 								<label>Association Tasks</label>
 								<textarea name="associationTasks" placeholder="Describe all task" rows="3" class="form-control"></textarea>
 							</div>
+							
 						<Br>
 						
 					
@@ -305,6 +307,8 @@ body {font-family: Arial;}
                 </div>
             </div>
         </div>
+        
+        
            <div class="row setup-content" id="step-4">
             <div class="col-xs-12">
                 <div class="col-md-12 well text-center">
@@ -342,7 +346,6 @@ body {font-family: Arial;}
 			</div>
 
 </form>
-
 
 <div id="Template4" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
