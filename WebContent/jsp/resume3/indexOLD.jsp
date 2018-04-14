@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
 <head>
-<title>Resume Template 4</title>
+<title>Template 3</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,500" rel="stylesheet">
 		<link rel="stylesheet" href="css/main.css">
@@ -159,39 +159,32 @@ body {font-family: Arial;}
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Template1')">Template 1</button>
   <button class="tablinks" onclick="openCity(event, 'Template2')">Template 2</button>
-  <button class="tablinks" onclick="openCity(event, 'Template3')">Template 3</button>
-  <button class="tablinks" onclick="openCity(event, 'Template4')" id="defaultOpen">Template 4</button>
+  <button class="tablinks" onclick="openCity(event, 'Template3')" id="defaultOpen">Template 3</button>
+  <button class="tablinks" onclick="openCity(event, 'Template4')">Template 4</button>
 </div>
 
 <div id="Template1" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Template 1</h3>
     <input class="btn btn-md btn-primary" value="Click for Template 1" onclick="location.href='http://localhost:9090/ResumeComp/jsp/resume1/index.jsp'"></p>
-  <a href="http://localhost:9090/ResumeComp/jsp/resume1/index.jsp"><img src="img/resume1.jpg"></a></p>
+  <a href="http://localhost:9090/ResumeComp/jsp/resume1/index.jsp"><img src="img/resume4.jpg"></a></p>
 </div>
 
 <div id="Template2" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Template 2</h3>
     <input class="btn btn-md btn-primary" value="Click for Template 2" onclick="location.href='http://localhost:9090/ResumeComp/jsp/resume2/index.jsp'"></p>
-  <a href="http://localhost:9090/ResumeComp/jsp/resume2/index.jsp"><img src="img/resume2.png"></a></p>
+  <a href="http://localhost:9090/ResumeComp/jsp/resume2/index.jsp"><img src="img/resume4.jpg"></a></p>
 </div>
 
 <div id="Template3" class="tabcontent">
-  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-  <h3>Template 3</h3>
-    <input class="btn btn-md btn-primary" value="Click for Template 3" onclick="location.href='http://localhost:9090/ResumeComp/jsp/resume3/index.jsp'"></p>
-  <a href="http://localhost:9090/ResumeComp/jsp/resume3/index.jsp"><img src="img/resume3.jpg"></a></p>
-</div>
-
-<div id="Template4" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
 
   		
   		<!-- Breadcrumb Navbar -->
 					<ul class="breadcrumb">
 				  <li><a href="http://localhost:9090/ResumeComp/jsp/index.jsp">Home</a></li>
-				  <li>Template 4</li>
+				  <li>Template 3</li>
 				</ul>
 		</p>		
   
@@ -202,7 +195,7 @@ body {font-family: Arial;}
                     <h1> STEP 1</h1>
                     <!-- <form> -->
 		
-  <form action="<%=request.getContextPath()%>/ResumeForm4" method="post">
+  <form action="<%=request.getContextPath()%>/ResumeForm3" method="post">
              
         			<fieldset>
 								<legend id="title5" class="desc"><strong><u>Personal Information</u></strong></legend><hr>
@@ -247,17 +240,17 @@ body {font-family: Arial;}
 						
 					</div>	
 							<!-- This is where you input your career information -->
-						<div class="form-group">
-							<label>Position</label>
-							<input type="text" name="position" placeholder="Enter Your Title...." class="form-control"></input>
-						</div>	
 					<div class="form-group">
-						<label>Career Profile</label>
-						<textarea name="careerProfile" placeholder="Enter Career Information....." rows="5" class="form-control"></textarea>
-					</div>	
+						<label>Objective</label>
+						<textarea name="objective" placeholder="Enter Objective Here.." class="form-control" rows="5"></textarea>
+					</div>
 					<div class="form-group">
-						<label>Website</label>
+						<label>Skills Attain</label>
 						<input type="text" name="Website" placeholder="Enter Website Name Here.." class="form-control">
+					</div>
+					<div class="form-group">
+						<label>Skills Description</label>
+						<textarea name="skillsDescription" placeholder="Describe your skills or list skills separated by comma for ex. Office and records management, database administration, " class="form-control" rows="5"></textarea>
 					</div>
 					</p>					
 
@@ -336,14 +329,20 @@ body {font-family: Arial;}
                     <h1 class="text-center"> STEP 3</h1>
 
                    <fieldset>
-								<legend id="title5" class="desc"><strong><u>Work Experiences</u></strong></legend><hr>
+								<legend id="title5" class="desc"><strong><u>Experience</u></strong></legend><hr>
 						</fieldset>
-							<div class="form-group">
+							
+							<div class="row">
+							<div class="col-sm-6 form-group">
 								<label>Company</label>
-								<input type="text" name="company" placeholder="Enter Company" class="form-control">
+								<input type="text" name="company" placeholder="Enter City Name Here.." class="form-control">
+							</div>	
+							<div class="col-sm-6 form-group">
+								<label>Company Location</label>
+								<input type="text" name="companyLocation" placeholder="Enter State Name Here.." class="form-control">
 							</div>
-		
-							<div class="form-group">
+						</div>
+						<div class="form-group">
 								<label>Title</label>
 								<input type="text" name="title" placeholder="Position....." class="form-control">
 							</div>
@@ -361,13 +360,8 @@ body {font-family: Arial;}
 						
 							<div class="form-group">
 								<label>Description</label>
-								<textarea name="description" placeholder="Description.." rows="3" class="form-control"></textarea>
+								<textarea name="description" placeholder="Describe all task" rows="3" class="form-control"></textarea>
 							</div>
-							
-							<div class="form-group">
-						<label>Skills</label>
-						<textarea name="skills" placeholder="Describe your skills or list skills separated by comma for ex. Office and records management, database administration, " class="form-control" rows="5"></textarea>
-					</div>
 						<Br>
 						
 					<!-- Add additional information of school -->	
@@ -430,10 +424,45 @@ body {font-family: Arial;}
 
 </form>
 
+
+<div id="Template4" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Template 4</h3>
+    <input class="btn btn-md btn-primary" value="Click for Template 4" onclick="location.href='http://localhost:9090/ResumeComp/jsp/resume4/index.jsp'"></p>
+  <a href="http://localhost:9090/ResumeComp/jsp/resume4/index.jsp"><img src="img/resume4.jpg"></a></p>
+</div>
 			</div>
 		</section>
 		<!-- End Banner Area -->
 		
+<script>
+var skills = $("#more-skills");
+var addSkillsForm = $("#add-skills");
+var indexSkills = 0;
+
+var getSkillsForm = function(indexSkills, action) {
+    return $('\
+     <div class="form-group" id="skills-m">\
+    <input name="skills' + indexSkills +'" type="text" placeholder="Add Skills" class="form-control"/>\
+    	<button class="remove btn btn-danger" type="button">Remove</button>\
+    	</span>\
+		</div>\
+    ');
+}
+
+addSkillsForm.on("click", function() {
+    var form = getSkillsForm(++indexSkills);
+    form.find(".remove").on("click", function() {
+       document.getElementById("skillsUtilCount").value = --indexSkills;
+       $(this).closest('#skills-m').remove();
+    });
+    document.getElementById("skillsUtilCount").value = indexExperience;
+    skills.append(form);
+});
+
+</script>
+			
+
 <script>
 var wrapperSchool = $("#wrapperSchool");
 var addSchoolForm = $("#add-school");

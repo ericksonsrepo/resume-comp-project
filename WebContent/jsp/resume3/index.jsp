@@ -167,14 +167,14 @@ body {font-family: Arial;}
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Template 1</h3>
     <input class="btn btn-md btn-primary" value="Click for Template 1" onclick="location.href='http://localhost:9090/ResumeComp/jsp/resume1/index.jsp'"></p>
-  <a href="http://localhost:9090/ResumeComp/jsp/resume1/index.jsp"><img src="img/resume4.jpg"></a></p>
+  <a href="http://localhost:9090/ResumeComp/jsp/resume1/index.jsp"><img src="img/resume1.jpg"></a></p>
 </div>
 
 <div id="Template2" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
   <h3>Template 2</h3>
     <input class="btn btn-md btn-primary" value="Click for Template 2" onclick="location.href='http://localhost:9090/ResumeComp/jsp/resume2/index.jsp'"></p>
-  <a href="http://localhost:9090/ResumeComp/jsp/resume2/index.jsp"><img src="img/resume4.jpg"></a></p>
+  <a href="http://localhost:9090/ResumeComp/jsp/resume2/index.jsp"><img src="img/resume2.png"></a></p>
 </div>
 
 <div id="Template3" class="tabcontent">
@@ -213,24 +213,6 @@ body {font-family: Arial;}
 							</div>
 						</div>					
 						<div class="form-group">
-							<label>Address</label>
-							<textarea name="Address" placeholder="Enter Address Here.." rows="2" class="form-control"></textarea>
-						</div>	
-						<div class="row">
-							<div class="col-sm-4 form-group">
-								<label>City</label>
-								<input type="text" name="City" placeholder="Enter City Name Here.." class="form-control">
-							</div>	
-							<div class="col-sm-4 form-group">
-								<label>State</label>
-								<input type="text" name="State" placeholder="Enter State Name Here.." class="form-control">
-							</div>	
-							<div class="col-sm-4 form-group">
-								<label>Zip Code</label>
-								<input type="text" name="ZipCode" placeholder="Enter Zip Code Here.." class="form-control">
-							</div>		
-						</div>
-						<div class="form-group">
 						<label>Phone Number</label>
 						<input type="text" name="PhoneNumber" placeholder="Enter Phone Number Here.." class="form-control">
 					</div>		
@@ -244,13 +226,13 @@ body {font-family: Arial;}
 						<label>Objective</label>
 						<textarea name="objective" placeholder="Enter Objective Here.." class="form-control" rows="5"></textarea>
 					</div>
-					<div class="form-group">
-						<label>Skills Attain</label>
-						<input type="text" name="Website" placeholder="Enter Website Name Here.." class="form-control">
+										<div class="form-group">
+						<label>Achievements</label>
+						<textarea name="achievements" placeholder="List all your achievements..." class="form-control" rows="5"></textarea>
 					</div>
 					<div class="form-group">
 						<label>Skills Description</label>
-						<textarea name="skillsDescription" placeholder="Describe your skills or list skills separated by comma for ex. Office and records management, database administration, " class="form-control" rows="5"></textarea>
+						<textarea name="skills" placeholder="Describe your skills or list skills separated by comma for ex. Office and records management, database administration, " class="form-control" rows="5"></textarea>
 					</div>
 					</p>					
 
@@ -281,41 +263,10 @@ body {font-family: Arial;}
 								<label>Degree Received</label>
 								<input type="text" name="degreeReceived" placeholder="Bachelor of Science....." class="form-control">
 							</div>
-							
-							<div class="form-group">
-								<label>Achievements</label>
-								<textarea name="achievements" placeholder="Achievements.." rows="3" class="form-control"></textarea>
-							</div>
-				
-						<div class="row">
-							<div class="col-sm-4 form-group">
-								<label>City</label>
-								<input type="text" name="schoolCity" placeholder="Enter City Name Here.." class="form-control">
-							</div>	
-							<div class="col-sm-4 form-group">
-								<label>State</label>
-								<input type="text" name="schoolState" placeholder="Enter State Name Here.." class="form-control">
-							</div>
 						</div>
 					
 						<Br>
 						
-					<!-- Add additional information of school -->
-					
-					<div class="row">
-					<fieldset>
-						<legend>Additional School</legend>
-					</fieldset>																		
-				
-					<div id="wrapperSchool"></div>				
-						<br>
-						<div class="row form-group">
-						<div class="col-sm-4 col-sm-offset-2">
-							<button type="button" class="addfields btn btn-success" id="add-school" >Add Additional School</button>		</div>											
-						</p>
-					</div>								
-						<input type="hidden" id="schoolUtilCount" name="schoolUtilCount"/>				
-					</div>
                    <!--</form> -->
 
                     
@@ -329,57 +280,27 @@ body {font-family: Arial;}
                     <h1 class="text-center"> STEP 3</h1>
 
                    <fieldset>
-								<legend id="title5" class="desc"><strong><u>Experience</u></strong></legend><hr>
+								<legend id="title5" class="desc"><strong><u>Associations</u></strong></legend><hr>
 						</fieldset>
 							
 							<div class="row">
 							<div class="col-sm-6 form-group">
-								<label>Company</label>
-								<input type="text" name="company" placeholder="Enter City Name Here.." class="form-control">
+								<label>Association Name</label>
+								<input type="text" name="associationName" placeholder="Enter City Name Here.." class="form-control">
 							</div>	
 							<div class="col-sm-6 form-group">
-								<label>Company Location</label>
-								<input type="text" name="companyLocation" placeholder="Enter State Name Here.." class="form-control">
-							</div>
-						</div>
-						<div class="form-group">
-								<label>Title</label>
-								<input type="text" name="title" placeholder="Position....." class="form-control">
-							</div>
-							<Br>
-						<div class="row">
-							<label class="col-md-2 control-label">Date Started:</label>
-							<div class="col-sm-2">
-								<input name="dateStarted" type="date" class="form-control" required/>
-							</div>
-							<label class="col-md-2 control-label">Date Ended:</label>
-							<div class="col-sm-2">
-								<input name="dateEnded" type="date" class="form-control" required/>
+								<label>Association Location</label>
+								<input type="text" name="associationLocation" placeholder="Enter State Name Here.." class="form-control">
 							</div>
 						</div>
 						
 							<div class="form-group">
-								<label>Description</label>
-								<textarea name="description" placeholder="Describe all task" rows="3" class="form-control"></textarea>
+								<label>Association Tasks</label>
+								<textarea name="associationTasks" placeholder="Describe all task" rows="3" class="form-control"></textarea>
 							</div>
 						<Br>
 						
-					<!-- Add additional information of school -->	
 					
-					<div class="row">
-					<fieldset>
-						<legend>Additional Experience</legend>
-					</fieldset>																		
-				
-					<div id="wrapperExperience"></div>				
-						<br>
-						<div class="row form-group">
-						<div class="col-sm-4 col-sm-offset-2">
-							<button type="button" class="addfields btn btn-success" id="add-experience" >Add Additional Experience</button>																																																	
-						</div>					
-					</div>								
-						<input type="hidden" id="experienceUtilCount" name="experienceUtilCount"/>				
-					</div>	
 
                 </div>
             </div>
@@ -392,26 +313,24 @@ body {font-family: Arial;}
                    
 
 					<fieldset>
-						<legend><strong><u>Social Media</u></strong></legend><hr>
-					</fieldset>							
-					<div class="row">
+								<legend id="title5" class="desc"><strong><u>Work Experience</u></strong></legend><hr>
+						</fieldset>
+							
+							<div class="row">
 							<div class="col-sm-6 form-group">
-								<label>Facebook</label>
-								<input type="text" name="facebook" placeholder="Facebook" class="form-control">
-							</div>		
-							<div class="col-sm-6 form-group">
-								<label>LinkedIn</label>
-								<input type="text" name="linkedIn" placeholder="LinkedIn" class="form-control">
+								<label>Company</label>
+								<input type="text" name="company" placeholder="Enter City Name Here.." class="form-control">
 							</div>	
 							<div class="col-sm-6 form-group">
-								<label>Twitter</label>
-								<input type="text" name="twitter" placeholder="Twitter" class="form-control">
+								<label>Company Location</label>
+								<input type="text" name="companyLocation" placeholder="Enter State Name Here.." class="form-control">
 							</div>
-							<div class="col-sm-6 form-group">
-								<label>gitHub</label>
-								<input name="github" type="text" placeholder="Other" class="form-control">
-							</div>	
-						</div>		
+						</div>
+						
+							<div class="form-group">
+								<label>Description</label>
+								<textarea name="workplaceTasks" placeholder="Describe all task" rows="3" class="form-control"></textarea>
+							</div>
 					</p>
  											<button class="btn btn-lg btn-info"  type="submit">Submit</button>
                     	       </div>
@@ -435,135 +354,6 @@ body {font-family: Arial;}
 		</section>
 		<!-- End Banner Area -->
 		
-<script>
-var skills = $("#more-skills");
-var addSkillsForm = $("#add-skills");
-var indexSkills = 0;
-
-var getSkillsForm = function(indexSkills, action) {
-    return $('\
-     <div class="form-group" id="skills-m">\
-    <input name="skills' + indexSkills +'" type="text" placeholder="Add Skills" class="form-control"/>\
-    	<button class="remove btn btn-danger" type="button">Remove</button>\
-    	</span>\
-		</div>\
-    ');
-}
-
-addSkillsForm.on("click", function() {
-    var form = getSkillsForm(++indexSkills);
-    form.find(".remove").on("click", function() {
-       document.getElementById("skillsUtilCount").value = --indexSkills;
-       $(this).closest('#skills-m').remove();
-    });
-    document.getElementById("skillsUtilCount").value = indexExperience;
-    skills.append(form);
-});
-
-</script>
-			
-
-<script>
-var wrapperSchool = $("#wrapperSchool");
-var addSchoolForm = $("#add-school");
-var indexSchool = 0;
-
-var getSchoolForm = function(indexSchool, action) {
-    return $('\
-    	<div id="removeSchool">\
-    	<div class="form-group">\
-		<label>School Attended</label>\
-		<input name="schoolAttended' + indexSchool + '" type="text" placeholder="Enter School Attended" class="form-control">\
-		</div>\
-		<div class="form-group">\
-	    <label>Degree Received</label>\
-		<input name="degreeReceived' + indexSchool + '" type="text" placeholder="Bachelor of Science....." class="form-control">\
-		</div>\
-		<div class="form-group">\
-		<label>Achievements</label>\
-		<textarea name="achievements' + indexSchool + '" placeholder="Achievements.." rows="3" class="form-control"></textarea>\
-		</div>\
-		<div class="row">\
-		<div class="col-sm-4 form-group">\
-		<label>City</label>\
-		<input name="citySchool' + indexSchool + '"type="text" placeholder="Enter City Name Here.." class="form-control">\
-		</div>	\
-		<div class="col-sm-4 form-group">\
-		<label>State</label>\
-		<input name="stateSchool' + indexSchool + '"type="text" placeholder="Enter State Name Here.." class="form-control">\
-		</div>\
-    		</div>\
-    		<div class="row form-group">\
-    		<div class="col-sm-4 col-sm-offset-2">\
-    		<button type="button" class="remove btn btn-danger">Remove School</button>\
-    		</div>\
-    		</div>\
-    		<br>\
-    ');
-}
-
-addSchoolForm.on("click", function() {
-    var form = getSchoolForm(++indexSchool);
-    form.find(".remove").on("click", function() {
-       document.getElementById("schoolUtilCount").value = --indexSchool;
-       $(this).closest('#removeSchool').remove();
-    });
-    document.getElementById("schoolUtilCount").value = indexSchool;
-    wrapperSchool.append(form);
-});
-</script>
-
-<script>
-var wrapperExperience = $("#wrapperExperience");
-var addExperienceForm = $("#add-experience");
-var indexExperience = 0;
-
-var getExperienceForm = function(indexExperience, action) {
-    return $('\
-    		<div id="removeExperience">\
-		<div class="form-group">\
-	<label>Company</label>\
-	<input name="company' + indexExperience + '" type="text" placeholder="Enter Company" class="form-control">\
-	</div>\
-	<div class="form-group">\
-	<label>Title</label>\
-	<input name="title' + indexExperience + '"type="text" placeholder="Bachelor of Science....." class="form-control">\
-	</div>\
-	<Br>\
-	<div class="row">\
-	<label class="col-md-2 control-label">Date Started:</label>\
-	<div class="col-sm-2">\
-	<input name="dateStarted' + indexExperience + '" type="date" class="form-control" required/>\
-	</div>\
-	<label class="col-md-2 control-label">Date Ended:</label>\
-	<div class="col-sm-2">\
-	<input name="dateEnded' + indexExperience + '" type="date" class="form-control" required/>\
-	</div>\
-	</div>\
-	<div class="form-group">\
-	<label>Description</label>\
-	<textarea name="description' + indexExperience + '"placeholder="Description.." rows="3" class="form-control"></textarea>\
-	</div>\
-	<div class="row form-group">\
-	<div class="col-sm-4 col-sm-offset-2">\
-	<button type="button" class="remove btn btn-danger">Remove Experience</button>\
-	</div>\
-	</div>\
-	</div>\
-    		<br>\
-    ');
-}
-
-addExperienceForm.on("click", function() {
-    var form = getExperienceForm(++indexExperience);
-    form.find(".remove").on("click", function() {
-       document.getElementById("experienceUtilCount").value = --indexExperience;
-       $(this).closest('#removeExperience').remove();
-    });
-    document.getElementById("experienceUtilCount").value = indexExperience;
-    wrapperExperience.append(form);
-});
-</script>
 
 
 <script>

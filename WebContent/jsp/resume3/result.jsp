@@ -34,41 +34,36 @@
 </head>
 <body>
 
-<!-- Personal Information -->
+	<!-- Personal Information -->
 	<% String FirstName =  request.getParameter("FirstName");
 	String LastName = request.getParameter("LastName");
-	String Address = request.getParameter("Address");
-	String City = request.getParameter("City");
-	String State = request.getParameter("State");
-	String ZipCode = request.getParameter("ZipCode");
 	String PhoneNumber = request.getParameter("PhoneNumber");
 	String emailAddress = request.getParameter("emailAddress");
-	String position = request.getParameter("position");
-	String careerProfile = request.getParameter("careerProfile");
-	String objective = request.getParameter("objective");
-	String Website = request.getParameter("Website");
-	String skills = request.getParameter("skills");%>
-	
+	String objective = request.getParameter("objective");%>
+		
 	<!-- Education Information -->
 	<%String schoolAttended = request.getParameter("schoolAttended");
 	String degreeReceived = request.getParameter("degreeReceived");
-	String achievements = request.getParameter("achievements");
-	String schoolCity = request.getParameter("schoolCity");
-	String schoolState = request.getParameter("schoolState");%>
-	
-		<!-- Experience Information -->
-	<%String company = request.getParameter("company");
-	String companyLocation = request.getParameter("companyLocation");
-	String title = request.getParameter("title");
-	String dateStarted = request.getParameter("dateStarted");
-	String dateEnded = request.getParameter("dateEnded");
-	String description = request.getParameter("description");%>
-	
-			<!-- Social Media -->
-	<%String facebook = request.getParameter("facebook");
-	String linkedIn = request.getParameter("linkedIn");
-	String twitter = request.getParameter("twitter");
-	String github = request.getParameter("github");%>
+	String gradePointAverage = request.getParameter("gradePointAverage");%>
+
+	<!-- Achievements Information -->
+	<%String achievements = request.getParameter("achievements");%>
+
+		
+	<!-- Skills Information -->
+	<% String skills = request.getParameter("skills");%>	
+		
+	<!-- Work Information -->
+	<%String company = request.getParameter("company");%>
+	<%String companyLocation = request.getParameter("companyLocation");%>
+	<%String workplaceTasks = request.getParameter("workplaceTasks");%>
+
+
+	<!-- Associations Information -->
+	<%String associationName = request.getParameter("associationName");
+	String associationLocation = request.getParameter("associationLocation");
+	String associationTasks = request.getParameter("associationTasks");%>	
+
 
     <p>
       <a href="http://pdf-ace.com/pdfme?cache=1&cache_for=86400" target="_blank"><button type="button" class="btn btn-primary">Download as PDF</button></a>
@@ -112,7 +107,7 @@
             
             <dt>Achievements</dt>
             <dd>
-                <h2>Achievements Attain</h2>
+                <h2>Achievements</h2>
 				<p><%=achievements %></p>
 			
 			 <dd class="clear"></dd>
@@ -122,13 +117,23 @@
                 <p><%=skills %></p>
             </dd>
             
+                       <dd class="clear"></dd>
+            
+            <dt>Association</dt>
+            <dd>
+                <h2><%= associationName%> <span><%= associationLocation%> </span></h2>
+                <ul>
+                    <li><%=associationTasks%></li>
+                </ul>
+            
+            
             <dd class="clear"></dd>
             
             <dt>Work Experience</dt>
             <dd>
                 <h2><%= company%> <span><%= companyLocation%> </span></h2>
                 <ul>
-                    <li><%=description%></li>
+                    <li><%=workplaceTasks%></li>
                 </ul>
 
         

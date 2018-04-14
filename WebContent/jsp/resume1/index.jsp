@@ -235,10 +235,6 @@ body {font-family: Arial;}
 						<textarea name="careerProfile" placeholder="Enter Career Information....." rows="5" class="form-control"></textarea>
 					</div>	
 					<div class="form-group">
-						<label>Objective</label>
-						<input type="text" name="objective" placeholder="Enter Objective Here.." class="form-control">
-					</div>
-					<div class="form-group">
 						<label>Website</label>
 						<input type="text" name="Website" placeholder="Enter Website Name Here.." class="form-control">
 					</div>
@@ -353,6 +349,10 @@ body {font-family: Arial;}
 								<label>Description</label>
 								<textarea name="description" placeholder="Description.." rows="3" class="form-control"></textarea>
 							</div>
+							<div class="form-group">
+						<label>Skills</label>
+						<textarea name="skills" placeholder="Describe your skills or list skills separated by comma for ex. Office and records management, database administration, " class="form-control" rows="5"></textarea>
+					</div>
 						<Br>
 						
 					<!-- Add additional information of school -->	

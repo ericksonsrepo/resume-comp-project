@@ -20,10 +20,15 @@
 <!-- Personal Information -->
 	<% String FirstName =  request.getParameter("FirstName");
 	String LastName = request.getParameter("LastName");
+	String Address = request.getParameter("Address");
+	String City = request.getParameter("City");
+	String State = request.getParameter("State");
+	String ZipCode = request.getParameter("ZipCode");
 	String PhoneNumber = request.getParameter("PhoneNumber");
 	String emailAddress = request.getParameter("emailAddress");
 	String position = request.getParameter("position");
 	String careerProfile = request.getParameter("careerProfile");
+	String objective = request.getParameter("objective");
 	String Website = request.getParameter("Website");
 	String skills = request.getParameter("skills");%>
 	
@@ -40,6 +45,12 @@
 	String dateStarted = request.getParameter("dateStarted");
 	String dateEnded = request.getParameter("dateEnded");
 	String description = request.getParameter("description");%>
+	
+			<!-- Social Media -->
+	<%String facebook = request.getParameter("facebook");
+	String linkedIn = request.getParameter("linkedIn");
+	String twitter = request.getParameter("twitter");
+	String github = request.getParameter("github");%>
 
     <p>
       <a href="http://pdf-ace.com/pdfme?cache=1&cache_for=86400" target="_blank"><button type="button" class="btn btn-primary">Download as PDF</button></a>
@@ -86,13 +97,27 @@
 					<div class="yui-gf">
 						<div class="yui-u first">
 							<h2>Skills</h2>
-							<div class="yui-u">
-							<p class="enlarge">
-								<%= skills %> 
-							</p>
 						</div>
+						<div class="yui-u">
+							<ul class="talent">
+								<li><%= skills %></li>
+								<li><%= skills %></li>
+								<li class="last"><%= skills %></li>
+							</ul>
+
+							<ul class="talent">
+								<li><%= skills %></li>
+								<li><%= skills %></li>
+								<li class="last"><%= skills %></li>
+							</ul>
+
+							<ul class="talent">
+								<li><%= skills %></li>
+								<li><%= skills %></li>
+								<li class="last"><%= skills %></li>
+							</ul>
 						</div>
-						
+					</div><!--// .yui-gf-->
 
 					<div class="yui-gf">
 	
@@ -110,6 +135,20 @@
 							</div>
 
 							<div class="job">
+								<h2><%= company %></h2>
+								<h3><%= title %></h3>
+								<h4><%=dateStarted %> - <%=dateEnded %></h4>
+								<p><%=description%></p>
+							</div>
+
+							<div class="job">
+								<h2><%= company %></h2>
+								<h3><%= title %></h3>
+								<h4><%=dateStarted %> - <%=dateEnded %></h4>
+								<p><%=description%></p>
+							</div>
+
+							<div class="job last">
 								<h2><%= company %></h2>
 								<h3><%= title %></h3>
 								<h4><%=dateStarted %> - <%=dateEnded %></h4>

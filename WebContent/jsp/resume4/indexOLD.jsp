@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
 <head>
-<title>Resume Template 4</title>
+<title>Template 1</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,500" rel="stylesheet">
 		<link rel="stylesheet" href="css/main.css">
@@ -256,9 +256,20 @@ body {font-family: Arial;}
 						<textarea name="careerProfile" placeholder="Enter Career Information....." rows="5" class="form-control"></textarea>
 					</div>	
 					<div class="form-group">
+						<label>Objective</label>
+						<input type="text" name="objective" placeholder="Enter Objective Here.." class="form-control">
+					</div>
+					<div class="form-group">
 						<label>Website</label>
 						<input type="text" name="Website" placeholder="Enter Website Name Here.." class="form-control">
 					</div>
+				
+						<div class="row">
+							<div class="col-sm-6 form-group" id="more-skills">
+                            	<input type="hidden" id="skillsUtilCount" name="skillsUtilCount"/>
+                    		</div>
+						</div>	
+                        <br><button class="addfields btn btn-success" type="button" id="add-skills">Add Skills</button>
 					</p>					
 
                     <!-- </form> -->
@@ -336,7 +347,7 @@ body {font-family: Arial;}
                     <h1 class="text-center"> STEP 3</h1>
 
                    <fieldset>
-								<legend id="title5" class="desc"><strong><u>Work Experiences</u></strong></legend><hr>
+								<legend id="title5" class="desc"><strong><u>Experience</u></strong></legend><hr>
 						</fieldset>
 							<div class="form-group">
 								<label>Company</label>
@@ -363,11 +374,6 @@ body {font-family: Arial;}
 								<label>Description</label>
 								<textarea name="description" placeholder="Description.." rows="3" class="form-control"></textarea>
 							</div>
-							
-							<div class="form-group">
-						<label>Skills</label>
-						<textarea name="skills" placeholder="Describe your skills or list skills separated by comma for ex. Office and records management, database administration, " class="form-control" rows="5"></textarea>
-					</div>
 						<Br>
 						
 					<!-- Add additional information of school -->	
@@ -434,6 +440,34 @@ body {font-family: Arial;}
 		</section>
 		<!-- End Banner Area -->
 		
+<script>
+var skills = $("#more-skills");
+var addSkillsForm = $("#add-skills");
+var indexSkills = 0;
+
+var getSkillsForm = function(indexSkills, action) {
+    return $('\
+     <div class="form-group" id="skills-m">\
+    <input name="skills' + indexSkills +'" type="text" placeholder="Add Skills" class="form-control"/>\
+    	<button class="remove btn btn-danger" type="button">Remove</button>\
+    	</span>\
+		</div>\
+    ');
+}
+
+addSkillsForm.on("click", function() {
+    var form = getSkillsForm(++indexSkills);
+    form.find(".remove").on("click", function() {
+       document.getElementById("skillsUtilCount").value = --indexSkills;
+       $(this).closest('#skills-m').remove();
+    });
+    document.getElementById("skillsUtilCount").value = indexSkills;
+    skills.append(form);
+});
+
+</script>
+			
+
 <script>
 var wrapperSchool = $("#wrapperSchool");
 var addSchoolForm = $("#add-school");

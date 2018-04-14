@@ -205,24 +205,7 @@ body {font-family: Arial;}
 								<input type="text" name="LastName" placeholder="Enter Last Name Here.." class="form-control" value="${LastName}">
 							</div>
 						</div>					
-						<div class="form-group">
-							<label>Address</label>
-							<textarea name="Address" placeholder="Enter Address Here.." rows="2" class="form-control"></textarea>
-						</div>	
-						<div class="row">
-							<div class="col-sm-4 form-group">
-								<label>City</label>
-								<input type="text" name="City" placeholder="Enter City Name Here.." class="form-control">
-							</div>	
-							<div class="col-sm-4 form-group">
-								<label>State</label>
-								<input type="text" name="State" placeholder="Enter State Name Here.." class="form-control">
-							</div>	
-							<div class="col-sm-4 form-group">
-								<label>Zip Code</label>
-								<input type="text" name="ZipCode" placeholder="Enter Zip Code Here.." class="form-control">
-							</div>		
-						</div>
+					
 						<div class="form-group">
 						<label>Phone Number</label>
 						<input type="text" name="PhoneNumber" placeholder="Enter Phone Number Here.." class="form-control">
@@ -241,21 +224,11 @@ body {font-family: Arial;}
 						<label>Career Profile</label>
 						<textarea name="careerProfile" placeholder="Enter Career Information....." rows="5" class="form-control"></textarea>
 					</div>	
-					<div class="form-group">
-						<label>Objective</label>
-						<input type="text" name="objective" placeholder="Enter Objective Here.." class="form-control">
-					</div>
-					<div class="form-group">
-						<label>Website</label>
-						<input type="text" name="Website" placeholder="Enter Website Name Here.." class="form-control">
-					</div>
-				
-						<div class="row">
-							<div class="col-sm-6 form-group" id="more-skills">
-                            	<input type="hidden" id="skillsUtilCount" name="skillsUtilCount"/>
-                    		</div>
-						</div>	
-                        <br><button class="addfields btn btn-success" type="button" id="add-skills">Add Skills</button>
+					
+										<div class="form-group">
+						<label>Skills</label>
+						<textarea name="skills" placeholder="Enter Career Information....." rows="5" class="form-control"></textarea>
+					</div>	
 					</p>					
 
                     <!-- </form> -->
@@ -290,17 +263,6 @@ body {font-family: Arial;}
 								<label>Achievements</label>
 								<textarea name="achievements" placeholder="Achievements.." rows="3" class="form-control"></textarea>
 							</div>
-				
-						<div class="row">
-							<div class="col-sm-4 form-group">
-								<label>City</label>
-								<input type="text" name="schoolCity" placeholder="Enter City Name Here.." class="form-control">
-							</div>	
-							<div class="col-sm-4 form-group">
-								<label>State</label>
-								<input type="text" name="schoolState" placeholder="Enter State Name Here.." class="form-control">
-							</div>
-						</div>
 					
 						<Br>
 						
@@ -378,11 +340,11 @@ body {font-family: Arial;}
 					</div>								
 						<input type="hidden" id="experienceUtilCount" name="experienceUtilCount"/>				
 					</div>	
-
+						<button class="btn btn-lg btn-info"  type="submit">Submit</button>
                 </div>
             </div>
         </div>
-           <div class="row setup-content" id="step-4">
+           <!--<div class="row setup-content" id="step-4">
             <div class="col-xs-12">
                 <div class="col-md-12 well text-center">
                     <h1 class="text-center"> STEP 4</h1>
@@ -414,7 +376,7 @@ body {font-family: Arial;}
  											<button class="btn btn-lg btn-info"  type="submit">Submit</button>
                     	       </div>
 			            </div>
-			        </div>
+			        </div>-->
 </form>			        
 			       
 			    </p>

@@ -36,8 +36,7 @@ public class ResumeForm extends HttpServlet {
 		String careerProfile = request.getParameter("careerProfile");
 		String objective = request.getParameter("objective");
 		String Website = request.getParameter("Website");
-		String skills = request.getParameter("skills");
-		
+
 			
 		//Education Information
 		String schoolAttended = request.getParameter("schoolAttended");
@@ -52,19 +51,14 @@ public class ResumeForm extends HttpServlet {
 		String dateStarted = request.getParameter("dateStarted");
 		String dateEnded = request.getParameter("dateEnded");
 		String description = request.getParameter("description");
+		String skills = request.getParameter("skills");
 		
 		//Social Media
 		String facebook = request.getParameter("facebook");
 		String linkedIn = request.getParameter("linkedIn");
 		String twitter = request.getParameter("twitter");
 		String github = request.getParameter("github");
-		
-////		SocialMedia socialmediaBean = new SocialMedia();
-////		
-////		socialmediaBean.setFacebook(facebook);
-////		socialmediaBean.setLinkedIn(linkedIn);
-////		socialmediaBean.setTwitter(twitter);
-////		socialmediaBean.setGithub(github);
+	
 //		
 			RequestDispatcher rd = request.getRequestDispatcher("/jsp/resume1/result.jsp");
 			rd.forward(request, response);
